@@ -35,7 +35,7 @@ a {
     padding: 0 100px;
 }
 
-#header > div > a > img {
+#header img {
     position: absolute;
     width: 60px;
     height: 60px;
@@ -99,12 +99,10 @@ a {
 	}
 	
 }
-@media only screen and (max-width:1120px) {
-	.header {
+@media only screen and (max-width:1160px) {
+    .header {
 		padding: 0 30px;
 	}
-}
-@media only screen and (max-width:900px) {
 	.hamburger {
 		display: block;
 		cursor: pointer;
@@ -143,6 +141,16 @@ a {
 	.nav-bar ul li a {
 		margin-bottom: 12px;
 	}
+    
+}
+@media (max-width:450px) {
+    #header {
+        padding: 0 50px;
+    }
+    #header .logo {
+        display: none;
+    }
+
 }
 /* Home section */
 .home {
