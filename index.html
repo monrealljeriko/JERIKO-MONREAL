@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeriko's Profile</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css" integrity="sha384-z4tVnCr80ZcL0iufVdGQSUzNvJsKjEtqYZjiQrrYKlpGow+btDHDfQWkFjoaz/Zr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!-- Navigation header -->
+    <section id="header">
+        <div><a href="#home"><img src="images/Logo.png" alt="logo"></a></div>
+        <div class="logo"><a href="#home">jeriko <span class="em">.</span></a></div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul class="ull">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Learning Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </section> 
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="home container">
+            <div class="col-left">
+                <div class="shadow-1">
+                    <img src="images/profile-red1.png" alt="img">
+                </div>
+            </div>
+            <div class="col-right">
+                <h3>Hello<span>!</span> My name is</h4>
+                <h1>Jeriko <span>Monreal</span></h1>
+                <p>I'm an IT Student.</p>
+                <a href="#projects" type="button" class="port">Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <!-- Learning Skills Section -->
+    <section id="skills">
+        <div class="skills-lbl">
+            <h1><strong>Learning Skills</strong></h1>
+            <p>Skills are acquired through learnings. As one of the aspring web developer, learning fundamentals helps me develop and gain skill knowledge.</p>
+            <div class="skills-row">
+                <div class="skills-col">
+                    <div class="icon"><img src="images/design.png"></div>
+                    <h2>DESIGN</h2>
+                    <p>PS, Canva, Figma</p>
+                </div>
+                <div class="skills-col">
+                    <div class="icon"><img src="images/webdev.png"></div>
+                    <h2>WEB DEV</h2>
+                    <p>HTML, CSS, JS</p>
+                </div>
+                <div class="skills-col">
+                   <div class="icon"><img src="images/video.png"></div>
+                    <h2>VIDEO</h2>
+                    <p>Capcut, Premier, Filmora</p>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <div class="projects-lbl">
+            <h1><strong> College Projects</strong></h1>
+            <div class="projects-row">
+                <div class="projects-col">
+                    <h2>FUND MANAGEMENT SYSTEM</h2>
+                    <p>The sytem provides basic functions that alow user to save and monitor/manage their funds/balances in a convenience way</p>
+                    <img src="images/c++.png">
+                    <img src="images/cli.png">
+                </div>
+                <div class="projects-col">
+                    <h2>J4 COURIER SYSTEM</h2>
+                    <p>A third-party courier center that allows users to freely select the variety of couriers agencies in their area to deliver and transport the package that they want to send out to a place or a person</p>
+                    <img src="images/python.png">
+                    <img src="images/figma.png">
+                    <img src="images/mysql.png">
+                </div>
+                <div class="projects-col">
+                    <h2>LIBRARY MANAGEMENT SYSTEM</h2>
+                    <p>System is designed to help the librarian or the administrator to maintain the database of books lists and borrowed books, and manage student informations.</p>
+                    <img src="images/python.png">
+                    <img src="images/figma.png">
+                    <img src="images/mysql.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+     <!-- ABOUT ME -->
+     <section id="about">
+        <div class="about container">
+            <div class="abt-left">
+				<h2><strong> About Me </strong></h2>
+				<p>I’m a Jeriko Monreal, currently student at Batangas State University and striving BS in Information Technology - Specialized in Service Management Track.</p>
+            </div>
+            <div class="abt-right">
+			    <img src="images/profile.png">
+            </div>
+        </div>
+	</section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <footer>
+            <p>Get in Touch</p>
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p class="end">Copy Right © Jeriko Monreal. All Right Reserved.</p>
+        </footer>
+    </section>
+
+    <script>
+        // <!-- hamburger click-->
+		hamburger = document.querySelector(".hamburger");
+		hamburger.onclick = function() {
+			navBar = document.querySelector(".nav-bar");
+			navBar.classList.toggle("active");
+		}
+        ulist = document.querySelector(".ull");
+		ulist.onclick = function() {
+			navBar = document.querySelector(".nav-bar");
+			navBar.classList.toggle("active");
+		}
+
+        // scroll behavior
+        $(document).ready(function(){
+        // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+                } // End if
+            });
+        });
+	</script>
+</body>
+</html>
