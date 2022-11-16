@@ -85,12 +85,7 @@ a {
 	color: #EA6A1B;
     font-weight: bold;
 }
-.nav-bar ul li a:focus {
-    color: #EA6A1B;
-}
-.nav-bar ul li a::after {
-    color: #292929;
-}
+
 
 /* Media query navigation */
 @media only screen and (max-width:1320px) {
@@ -528,3 +523,4 @@ footer p:nth-child(2){
 @media (max-width:900px) {
     
 }
+
